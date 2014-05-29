@@ -14,19 +14,19 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         MainActivity activity = getActivity();
         int count = 0;
         String result = activity.getGreeting(count);
-        Assert.assertEquals(result, "Hola mundo");
+        Assert.assertEquals("Hola mundo", result);
 
         count = 1;
         result = activity.getGreeting(count);
-        Assert.assertEquals(result, "Bonjour tout le monde");
+        Assert.assertEquals("Bonjour tout le monde", result);
 
         count = 2;
         result = activity.getGreeting(count);
-        Assert.assertEquals(result, "Ciao mondo");
+        Assert.assertEquals("Ciao mondo", result);
 
         count = 3;
         result = activity.getGreeting(count);
-        Assert.assertEquals(result, "Hallo Welt");
+        Assert.assertEquals("Hallo Welt", result);
     }
 }
 
